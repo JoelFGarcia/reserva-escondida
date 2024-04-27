@@ -1,0 +1,35 @@
+header {
+    background-color: #3c4349;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    nav {
+        div {
+            a {
+                img {
+                    height: 12 0px;
+                }
+            }
+            button {
+                span {
+
+                }
+            }
+            div {
+                .nav-link {
+                    color: #ffffff;
+                    text-align: center;
+                    font-size: 30px;
+                    letter-spacing: 3px;
+                    padding-left: 50px !important;
+                    &:hover {
+                        color: #ffc2c2;
+                        text-shadow: 0px 0px 3px rgba(255,255,255,1);
+                        transform: scale(1.1);
+                        transition: transform 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+}
