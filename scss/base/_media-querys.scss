@@ -1,0 +1,154 @@
+@media screen and (max-width:1360px){
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:1160px){
+    .nav-link {
+        letter-spacing: 2px;
+        padding-left: 30px !important;
+    }
+    main {
+        .hero {
+            margin-bottom: 30px;
+            background-position: bottom;
+            h1 {
+                font-size: 55px;
+            }
+        }
+        .history {
+            height: auto;
+        }
+        .maps {
+            flex-direction: column;
+            ul {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px){
+    .navbar {
+        --bs-navbar-padding-y: 0rem;
+        div {
+            div {
+                .navbar-nav {
+                    flex-direction: row;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    main {
+        .hero {
+            h1 {
+                font-size: 50px;
+            }
+        }
+        .history {
+            flex-direction: row;
+        }
+        .back-img-fixed {
+            height: 300px;
+        }
+    }
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:850px){
+    .navbar {
+        div {
+            div {
+                .navbar-nav {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    main {
+        .hero {
+            margin-bottom: 30px;
+            background-position: bottom;
+            background-size: 120%;
+            h1 {
+                font-size: 40px;
+            }
+        }
+        .back-img-fixed {
+            background-attachment: unset;
+            background-position-x: center;
+        }
+    }
+}
+
+@media screen and (max-width:690px){
+    .header-logo {
+        height: 95px;
+    }
+    .nav-link {
+        font-size: 25px;
+    }
+    main {
+        .hero {
+            margin-bottom: 30px;
+            background-position: bottom;
+            background-size: 150%;
+            h1 {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:620px){
+    main {
+        .hero {
+            background-size: 210%;
+            h1 {
+                line-height: 2;
+            }
+        }
+        .history-bodega {
+            height: auto;
+            margin-top: 20px;
+        }
+        .maps {
+            .contact-map {
+                display: none;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width:452px){
+    main {
+        padding-top: 0px;
+        .hero {
+            height: auto;
+            width: 130% auto;
+            background-image: none;
+            background-color: #3c4349;
+            padding: 15px 0px;
+            border-radius: 0px 0px 40px 40px;
+            h1{
+                height: auto;
+                background-image: none;
+                margin-bottom: 0px;
+            }
+            p{
+                display: none;
+            }
+        }
+        .maps {
+            ul {
+                li {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
