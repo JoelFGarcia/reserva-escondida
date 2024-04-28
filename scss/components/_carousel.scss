@@ -1,0 +1,9 @@
+.contenedor--carousel {
+    width: 50%;
+    margin: 1em auto;
+    div{
+        .carousel-inner {
+            border-radius: 1rem;
+        }
+    } 
+}
