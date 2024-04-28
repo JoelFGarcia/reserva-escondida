@@ -292,7 +292,7 @@ main .maps ul li {
 /* ! ******* CONTACTO ********** */
 
 
-.contact-info {
+/* .contact-info {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -315,7 +315,7 @@ main .maps ul li {
 
 .contact-info ul li i{
     margin-right: 20px;
-}
+} */
 
 /* .contact-info ul li img {
     background-color: #ffffff;
@@ -325,10 +325,10 @@ main .maps ul li {
     border-radius: 40%;
 } */
 
-.contact-info ul li a {
+/* .contact-info ul li a {
     color: #C99E6E;
     text-decoration: none;
-}
+} */
 
 .contact-info .contact-map {
     margin: 30px;

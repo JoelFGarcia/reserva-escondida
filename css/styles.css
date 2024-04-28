@@ -114,7 +114,7 @@ header {
     letter-spacing: 3px;
     padding-left: 50px !important; }
     header nav div div .nav-link:hover {
-      color: #ffc2c2;
+      color: #CC4949;
       text-shadow: 0px 0px 3px white;
       transform: scale(1.1);
       transition: transform 0.3s ease; }
@@ -241,6 +241,86 @@ footer {
         color: #CED2D6;
         border-radius: 20px;
         width: 140px; }
+        .enlaces-tienda .productos-container .caja-productos .boton-comprar-productos:hover {
+          background-color: #6a88a6;
+          color: #000000;
+          box-shadow: 0px 0px 12px 2px rgba(106, 136, 166, 0.75);
+          -webkit-box-shadow: 0px 0px 12px 2px rgba(106, 136, 166, 0.75);
+          -moz-box-shadow: 0px 0px 12px 2px rgba(106, 136, 166, 0.75); }
+
+.bg-contacto {
+  background: #292e30;
+  background: linear-gradient(0deg, #292e30 50%, rgba(206, 208, 210, 0.875788) 90%, rgba(206, 210, 214, 0.461222) 100%); }
+  .bg-contacto .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bolder;
+    font-size: 27px;
+    color: #292E33; }
+    .bg-contacto .contact-info ul {
+      padding: 40px; }
+      .bg-contacto .contact-info ul li {
+        text-align: left;
+        list-style: none; }
+        .bg-contacto .contact-info ul li .contact-info--instagram {
+          color: #ff9728;
+          text-decoration: none; }
+          .bg-contacto .contact-info ul li .contact-info--instagram i {
+            margin-right: 15px; }
+        .bg-contacto .contact-info ul li .contact-info--facebook {
+          color: #2357ff;
+          text-decoration: none; }
+          .bg-contacto .contact-info ul li .contact-info--facebook i {
+            margin-right: 15px; }
+        .bg-contacto .contact-info ul li i {
+          margin-right: 15px; }
+  .bg-contacto .form-container {
+    margin-top: 40px; }
+    .bg-contacto .form-container p {
+      color: #ffffff;
+      font-size: 40px;
+      margin: 15px auto; }
+    .bg-contacto .form-container form {
+      max-width: 600px;
+      margin: 50px auto; }
+      .bg-contacto .form-container form .feedback-input {
+        color: white;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 5px;
+        line-height: 22px;
+        background-color: transparent;
+        border: 2px solid #CC6666;
+        transition: all 0.3s;
+        padding: 13px;
+        margin-bottom: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        outline: 0; }
+        .bg-contacto .form-container form .feedback-input:focus {
+          border: 2px solid #CC4949; }
+      .bg-contacto .form-container form textarea {
+        height: 150px;
+        line-height: 150%;
+        resize: vertical; }
+      .bg-contacto .form-container form .form-boton {
+        width: 100%;
+        background: #CC6666;
+        border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 0.3s;
+        margin-top: -4px;
+        font-weight: 700; }
+        .bg-contacto .form-container form .form-boton:hover {
+          background: #CC4949; }
 
 @media screen and (max-width: 1360px) {
   .galeria {

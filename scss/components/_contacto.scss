@@ -1,0 +1,93 @@
+.bg-contacto {
+    background: rgb(41,46,48);
+    background: linear-gradient(0deg, rgba(41,46,48,1) 50%, rgba(206,208,210,0.8757878151260504) 90%, rgba(206,210,214,0.46122198879551823) 100%);
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        font-weight: bolder;
+        font-size: 27px;
+        color: #292E33;
+        ul {
+            padding: 40px;
+            li {
+                text-align: left;
+                list-style: none;
+                .contact-info--instagram {
+                    color: #ff9728;
+                    text-decoration: none;
+                    i {
+                        margin-right: 15px;
+                    }
+                }
+                .contact-info--facebook {
+                    color: #2357ff;
+                    text-decoration: none;
+                    i {
+                        margin-right: 15px;
+                    }
+                }
+                i {
+                    margin-right: 15px;
+                }
+                &:nth-child(4) {
+                    text-align: center;
+            }
+        }
+    }
+    .form-container {
+        margin-top: 40px;
+        p {
+            color: #ffffff;
+            font-size: 40px;
+            margin: 15px auto;
+        }
+        form {
+            max-width:600px; margin:50px auto;
+            .feedback-input {
+                color:white;
+                font-family: Helvetica, Arial, sans-serif;
+                font-weight:500;
+                font-size: 18px;
+                border-radius: 5px;
+                line-height: 22px;
+                background-color: transparent;
+                border:2px solid #CC6666;
+                transition: all 0.3s;
+                padding: 13px;
+                margin-bottom: 15px;
+                width:100%;
+                box-sizing: border-box;
+                outline:0;
+                &:focus {
+                    border:2px solid #CC4949;
+                }
+            }
+            textarea {
+                height: 150px;
+                line-height: 150%;
+                resize:vertical;
+            }
+            .form-boton {   
+                width: 100%;
+                background:#CC6666;
+                border-radius:5px;
+                border:0;
+                cursor:pointer;
+                color:white;
+                font-size:24px;
+                padding-top:10px;
+                padding-bottom:10px;
+                transition: all 0.3s;
+                margin-top:-4px;
+                font-weight:700;
+                &:hover {
+                    background:#CC4949;
+                }
+            }
+        }
+    }
+}
+
+

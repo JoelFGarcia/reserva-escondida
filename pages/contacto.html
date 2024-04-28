@@ -33,21 +33,36 @@
     </header>
     <!-- Fin del header -->
     <!-- Comienzo del main -->
-    <main>
+    <main class="bg-contacto">
         <section class="contact-info">
             <ul>
                 <li>Contactanos por WhatsApp 15 1234 1234</li>
                 <li><i class="bi bi-telephone"></i>15 1234-1234</li>
                 <li><i class="bi bi-envelope"></i>a@a.com</li>
                 <li><i class="bi bi-geo-alt"></i>Calle Sin Nombre 123, MENDOZA</li>
-                <li><i class="bi bi-instagram"></i><a href="">Siguenos en Instagram</a></li>
-                <li><i class="bi bi-facebook"></i><a href="">Siguenos en Facebook</a></li>
+                <li>
+                    <a class="contact-info--instagram" href="https://www.instagram.com" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a class="contact-info--facebook" href="https://www.facebook.com" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
             </ul>            
             <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11963.416226057963!2d-70.04925777896068!3d-32.816294703472096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1710611440099!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <section class="form-container">
             <p>Para reservas e información:</p>
-            <form action="" method="" enctype="">
+            <form>      
+                <input name="name" type="text" class="feedback-input" placeholder="Nombre">   
+                <input name="email" type="text" class="feedback-input" placeholder="Email">
+                <input name="telefono" type="text" class="feedback-input" placeholder="Telefono" >
+                <textarea name="text" class="feedback-input" placeholder="Mensaje"></textarea>
+                <input class="form-boton" type="submit" value="ENVIAR">
+            </form>
+
+
+            <!-- <form action="" method="" enctype="">
                 <div>
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre">
@@ -68,7 +83,7 @@
                 <div>
                     <input class="form-boton" type="submit" name="enviar" id="enviar">
                 </div>
-            </form>
+            </form> -->
         </section>
     </main>
     <!-- Fin del main -->
