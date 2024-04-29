@@ -5,9 +5,20 @@
 }
 
 @media screen and (max-width:1160px){
-    .nav-link {
-        letter-spacing: 2px;
-        padding-left: 30px !important;
+    header {
+        nav {
+            div {
+                div {
+                    .navbar-nav {
+                        .nav-link {
+                            letter-spacing: 2px;
+                            padding-left: 30px !important;
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
     }
     main {
         .hero {
@@ -125,29 +136,34 @@
 }
 
 @media screen and (max-width:452px){
-    main {
-        padding-top: 0px;
-        .hero {
-            height: auto;
-            width: 130% auto;
-            background-image: none;
-            background-color: #3c4349;
-            padding: 15px 0px;
-            border-radius: 0px 0px 40px 40px;
-            h1{
+    body {
+        main {
+            padding-top: 0px;
+            .hero {
                 height: auto;
+                width: 130% auto;
                 background-image: none;
-                margin-bottom: 0px;
-            }
-            p{
-                display: none;
-            }
-        }
-        .maps {
-            ul {
-                li {
-                    font-size: 25px;
+                background-color: #3c4349;
+                padding: 15px 0px;
+                border-radius: 0px 0px 40px 40px;
+                h1{
+                    height: auto;
+                    background-image: none;
+                    margin-bottom: 0px;
                 }
+                p{
+                    display: none;
+                }
+            }
+            .maps {
+                ul {
+                    li {
+                        font-size: 25px;
+                    }
+                }
+            }
+            .titulo-galeria {
+                margin-top: 40px;
             }
         }
     }

@@ -7,25 +7,41 @@
         align-items: center;
         justify-content: space-around;
         font-weight: bolder;
-        font-size: 27px;
+        font-size: 35px;
         color: #292E33;
         ul {
             padding: 40px;
             li {
                 text-align: left;
-                list-style: none;
-                .contact-info--instagram {
-                    color: #ff9728;
+                list-style: none;                
+                .contact-info--whatsapp {   
+                    color: #292E33;                 
                     text-decoration: none;
                     i {
                         margin-right: 15px;
                     }
+                    &:hover {
+                        color: #0daf0d;
+                    }
                 }
-                .contact-info--facebook {
-                    color: #2357ff;
+                .contact-info--instagram {   
+                    color: #292E33;                 
                     text-decoration: none;
                     i {
                         margin-right: 15px;
+                    }
+                    &:hover {
+                        color: #ff9728;
+                    }
+                }
+                .contact-info--facebook {
+                    color: #292E33;
+                    text-decoration: none;
+                    i {
+                        margin-right: 15px;
+                    }
+                    &:hover {
+                        color: #2357ff;
                     }
                 }
                 i {
@@ -33,7 +49,12 @@
                 }
                 &:nth-child(4) {
                     text-align: center;
+                    font-size: 55px;
+                }
             }
+        }
+        .contact-map {
+            border-radius: 10px;
         }
     }
     .form-container {
