@@ -11,10 +11,10 @@
             flex-direction: column;
             background-color: #3253734d;
             width: 180px;
-            height: 350px;
+            height: 320px;
             margin: 10px;
             padding: 10px;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
             border-radius: 10px;
             font-weight: 900;
@@ -26,19 +26,25 @@
             }
             .boton-comprar-productos {
                 text-decoration: none;
-                font-size: 20px;
-                background-color: #000000;
-                color: #CED2D6;
-                border-radius: 20px;
+                font-size: 20px; 
+                font-weight:700;
                 width: 140px;
+                background-color:#6A88A6;
+                border-radius:25px;
+                border:0;
+                cursor:pointer;
+                color:rgb(0, 0, 0);
+                padding-top:3px;
+                padding-bottom:3px;
+                transition: all 0.5s;                
                 &:hover {
-                    background-color: #6a88a6;
-                    color: #000000;
-                    box-shadow: 0px 0px 12px 2px rgba(106,136,166,0.75);
-                    -webkit-box-shadow: 0px 0px 12px 2px rgba(106,136,166,0.75);
-                    -moz-box-shadow: 0px 0px 12px 2px rgba(106,136,166,0.75);
+                    color: #ffffff;
+                    background-color:#0F263D;
                 }
             }
         }
     }
+}
+.arrastra-footer {
+    flex: 1;
 }

@@ -65,6 +65,7 @@
             margin: 15px auto;
         }
         form {
+            padding: 20px;
             max-width:600px; margin:50px auto;
             .feedback-input {
                 color:white;
@@ -92,7 +93,7 @@
             }
             .form-boton {   
                 width: 100%;
-                background:#CC6666;
+                background-color:#CC6666;
                 border-radius:5px;
                 border:0;
                 cursor:pointer;
@@ -104,7 +105,7 @@
                 margin-top:-4px;
                 font-weight:700;
                 &:hover {
-                    background:#CC4949;
+                    background-color:#CC4949;
                 }
             }
         }

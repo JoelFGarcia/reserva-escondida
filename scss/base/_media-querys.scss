@@ -80,18 +80,26 @@
             }
         }
     }
-    main {
-        .hero {
-            margin-bottom: 30px;
-            background-position: bottom;
-            background-size: 120%;
-            h1 {
-                font-size: 40px;
+    body {
+        main {
+            width: 100%;
+            .hero {
+                margin-bottom: 30px;
+                background-position: bottom;
+                background-size: 120%;
+                h1 {
+                    font-size: 40px;
+                }
             }
-        }
-        .back-img-fixed {
-            background-attachment: unset;
-            background-position-x: center;
+            .back-img-fixed {
+                background-attachment: unset;
+                background-position-x: center;
+            }
+            section {
+                .contenedor--carousel {
+                    width: 80%;
+                }
+            }
         }
     }
 }
@@ -110,6 +118,14 @@
             background-size: 150%;
             h1 {
                 font-size: 35px;
+            }
+        }
+    }
+    .bg-contacto {
+        .contact-info {
+            font-size: 32px;
+            .contact-map {
+                display: none;
             }
         }
     }
@@ -132,7 +148,17 @@
                 display: none;
             }
         }
-    }    
+    }   
+    .bg-contacto {
+        .contact-info {
+            font-size: 28px;
+        }
+        .form-container {
+            p {
+                font-size: 30px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:452px){
