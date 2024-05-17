@@ -2,18 +2,35 @@ footer {
     display: flex;
     height: 150px;
     width: 100%;
-    background-color: #292E33;
-    color: #CED2D6;
+    background-color: $color-principal3;
+    color: $color-fondo;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        li {
+            a {
+                margin: 0px 15px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #ffffff;
+                &:hover {
+                    color: $color-principal2;
+                }
+            }
+        }
+    }
     p {
         font-size: 20px;
         margin: 0px;
     }
     div {
         a {
-            font-size: 40px;
+            font-size: 30px;
         color: #ffffff;
         margin: 0px 5px;
         .bi-facebook {

@@ -1,6 +1,6 @@
 .bg-contacto {
-    background: rgb(41,46,48);
-    background: linear-gradient(0deg, rgba(41,46,48,1) 50%, rgba(206,208,210,0.8757878151260504) 90%, rgba(206,210,214,0.46122198879551823) 100%);
+    background: $color-principal3;
+    background: linear-gradient(0deg, $color-principal3 50%, rgba(206,208,210,0.8757878151260504) 90%, rgba(206,210,214,0.46122198879551823) 100%);
     .contact-info {
         display: flex;
         flex-wrap: wrap;
@@ -8,14 +8,14 @@
         justify-content: space-around;
         font-weight: bolder;
         font-size: 35px;
-        color: #292E33;
+        color: $color-principal3;
         ul {
             padding: 40px;
             li {
                 text-align: left;
                 list-style: none;                
                 .contact-info--whatsapp {   
-                    color: #292E33;                 
+                    color: $color-principal3;                 
                     text-decoration: none;
                     i {
                         margin-right: 15px;
@@ -25,7 +25,7 @@
                     }
                 }
                 .contact-info--instagram {   
-                    color: #292E33;                 
+                    color: $color-principal3;                 
                     text-decoration: none;
                     i {
                         margin-right: 15px;
@@ -35,7 +35,7 @@
                     }
                 }
                 .contact-info--facebook {
-                    color: #292E33;
+                    color: $color-principal3;
                     text-decoration: none;
                     i {
                         margin-right: 15px;
@@ -83,7 +83,7 @@
                 box-sizing: border-box;
                 outline:0;
                 &:focus {
-                    border:2px solid #CC4949;
+                    border:2px solid #c03f3f;
                 }
             }
             textarea {
@@ -105,7 +105,7 @@
                 margin-top:-4px;
                 font-weight:700;
                 &:hover {
-                    background-color:#CC4949;
+                    background-color:$color-principal2;
                 }
             }
         }

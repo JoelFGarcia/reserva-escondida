@@ -1,5 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rock+Salt&display=swap");
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.animate__fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +47,7 @@ body {
     /* DEJA MARGENES AUTOMATICOS PARA CENTRAR LA CAJA */
     text-align: center;
     flex-direction: column;
-    padding-top: 50px; }
+    padding-top: 30px; }
 
 main {
   display: flex;
@@ -29,12 +57,13 @@ main {
   /* DEJA MARGENES AUTOMATICOS PARA CENTRAR LA CAJA */
   text-align: center;
   flex-direction: column;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
   main .hero {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
     width: 100%;
     height: 360px;
@@ -80,12 +109,12 @@ main {
   main .fondo2 {
     background-image: url(../img/main2.jpg); }
   main .history-bodega {
-    height: 300px;
-    text-align: center;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    height: 300px;
+    text-align: center;
+    flex-wrap: wrap;
     align-content: space-evenly; }
     main .history-bodega h2 {
       font-size: 40px;
@@ -119,27 +148,27 @@ main {
   main section p {
     font-size: 20px;
     line-height: 32px;
-    font-weight: 900; }
+    font-weight: 900;
+    padding: 5px; }
   main section div h3 {
     font-size: 30px;
     font-weight: 900; }
 
 header {
-  background-color: #3c4349;
+  background-color: #292E33;
   position: sticky;
   top: 0;
   z-index: 10; }
   header nav div a img {
     height: 120px; }
-  header nav div div .nav-link {
+  header nav div div div .nav-link {
     color: #ffffff;
     text-align: center;
     font-size: 30px;
     letter-spacing: 3px;
-    padding-left: 50px !important; }
-    header nav div div .nav-link:hover {
+    /* padding-left: 50px !important; */ }
+    header nav div div div .nav-link:hover {
       color: #CC4949;
-      text-shadow: 0px 0px 3px white;
       transform: scale(1.1);
       transition: transform 0.3s ease; }
 
@@ -154,7 +183,7 @@ header {
   background-color: #25D366;
   box-shadow: 0px 0px 3px 5px #25D366;
   -webkit-box-shadow: 0px 0px 5px 5px #25D366;
-  -moz-box-shadow: 0px 0px 5px 5px #25d366;
+  -moz-box-shadow: 0px 0px 5px 5px #25D366;
   border-radius: 50%;
   position: fixed;
   bottom: 45px;
@@ -174,11 +203,23 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly; }
+  footer ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px; }
+    footer ul li a {
+      margin: 0px 15px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #ffffff; }
+      footer ul li a:hover {
+        color: #CC4949; }
   footer p {
     font-size: 20px;
     margin: 0px; }
   footer div a {
-    font-size: 40px;
+    font-size: 30px;
     color: #ffffff;
     margin: 0px 5px; }
     footer div a .bi-facebook:hover {
@@ -201,9 +242,7 @@ main .contenedor-galeria {
   max-width: 100%;
   margin: 0 auto;
   padding: 0.3rem;
-  text-align: center;
-  background-color: #fff;
-  border-radius: 0.5em; }
+  text-align: center; }
   main .contenedor-galeria .galeria {
     display: grid;
     margin: 0.2em 0.2em;
@@ -225,54 +264,102 @@ main .contenedor-galeria {
   .contenedor--carousel div .carousel-inner {
     border-radius: 1rem; }
 
-.enlaces-tienda {
+body main .contenedor-degustacion {
+  margin-bottom: 15px; }
+  body main .contenedor-degustacion a {
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid #6d0003;
+    border-radius: 10px;
+    color: #6d0003;
+    padding: 2px 7px;
+    transition: all 0.5s; }
+    body main .contenedor-degustacion a:hover {
+      background-color: #6d0003;
+      color: #ffffff; }
+
+body main section div .degustaciones-container {
   display: flex;
-  flex-direction: column; }
-  .enlaces-tienda .productos-container {
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  body main section div .degustaciones-container .caja-degustaciones {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; }
-    .enlaces-tienda .productos-container .caja-productos {
+    height: 200px;
+    margin: 30px 10px;
+    border: 2px solid #6d0003;
+    border-radius: 0px 10px 10px 0px;
+    transition: transform 0.3s, box-shadow 0.3s; }
+    body main section div .degustaciones-container .caja-degustaciones:hover {
+      transform: translateX(-4px) translateY(-4px);
+      box-shadow: 0 5px 15px #000000b3; }
+    body main section div .degustaciones-container .caja-degustaciones img {
+      height: 100%; }
+    body main section div .degustaciones-container .caja-degustaciones div {
       display: flex;
-      flex-direction: column;
-      background-color: #3253734d;
-      width: 180px;
-      height: 320px;
-      margin: 10px;
-      padding: 10px;
-      justify-content: space-evenly;
       align-items: center;
-      border-radius: 10px;
-      font-weight: 900;
-      box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
-      -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5); }
-      .enlaces-tienda .productos-container .caja-productos img {
-        width: 100%; }
-      .enlaces-tienda .productos-container .caja-productos .boton-comprar-productos {
+      justify-content: center;
+      flex-direction: column; }
+      body main section div .degustaciones-container .caja-degustaciones div p {
+        width: 200px;
+        font-weight: 900;
+        font-size: 22px; }
+        body main section div .degustaciones-container .caja-degustaciones div p:nth-child(2) {
+          font-weight: 400; }
+      body main section div .degustaciones-container .caja-degustaciones div a {
         text-decoration: none;
         font-size: 20px;
-        font-weight: 700;
-        width: 140px;
-        background-color: #6A88A6;
-        border-radius: 25px;
-        border: 0;
-        cursor: pointer;
-        color: black;
-        padding-top: 3px;
-        padding-bottom: 3px;
+        border: 2px solid #6d0003;
+        border-radius: 10px;
+        color: #6d0003;
+        padding: 2px 7px;
         transition: all 0.5s; }
-        .enlaces-tienda .productos-container .caja-productos .boton-comprar-productos:hover {
+        body main section div .degustaciones-container .caja-degustaciones div a:hover {
+          background-color: #6d0003;
           color: #ffffff;
-          background-color: #0F263D; }
+          transform: scale(1.1); }
 
-.arrastra-footer {
-  flex: 1; }
+main .enlaces-tienda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  main .enlaces-tienda .caja-productos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 340px;
+    width: 180px;
+    margin: 30px 10px;
+    border: 2px solid #6d0003;
+    border-radius: 0px 0px 10px 10px;
+    transition: transform 0.3s, box-shadow 0.3s; }
+    main .enlaces-tienda .caja-productos:hover {
+      transform: translateX(-4px) translateY(-4px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7); }
+    main .enlaces-tienda .caja-productos img {
+      height: 50%;
+      object-fit: contain; }
+    main .enlaces-tienda .caja-productos p {
+      height: 80px;
+      width: 75%;
+      text-align: center; }
+    main .enlaces-tienda .caja-productos .boton-comprar-productos {
+      text-decoration: none;
+      font-size: 20px;
+      border: 2px solid #6d0003;
+      border-radius: 10px;
+      color: #6d0003;
+      padding: 2px 7px;
+      transition: all 0.5s; }
+      main .enlaces-tienda .caja-productos .boton-comprar-productos:hover {
+        background-color: #6d0003;
+        color: #ffffff;
+        transform: scale(1.1); }
 
 .bg-contacto {
-  background: #292e30;
-  background: linear-gradient(0deg, #292e30 50%, rgba(206, 208, 210, 0.875788) 90%, rgba(206, 210, 214, 0.461222) 100%); }
+  background: #292E33;
+  background: linear-gradient(0deg, #292E33 50%, rgba(206, 208, 210, 0.875788) 90%, rgba(206, 210, 214, 0.461222) 100%); }
   .bg-contacto .contact-info {
     display: flex;
     flex-wrap: wrap;
@@ -340,7 +427,7 @@ main .contenedor-galeria {
         box-sizing: border-box;
         outline: 0; }
         .bg-contacto .form-container form .feedback-input:focus {
-          border: 2px solid #CC4949; }
+          border: 2px solid #c03f3f; }
       .bg-contacto .form-container form textarea {
         height: 150px;
         line-height: 150%;
@@ -368,7 +455,6 @@ main .contenedor-galeria {
 @media screen and (max-width: 1160px) {
   header nav div div .navbar-nav .nav-link {
     letter-spacing: 2px;
-    padding-left: 30px !important;
     font-size: 30px; }
   main .hero {
     margin-bottom: 30px;
@@ -388,6 +474,8 @@ main .contenedor-galeria {
     .navbar div div .navbar-nav {
       flex-direction: row;
       justify-content: center; }
+      .navbar div div .navbar-nav .nav-link {
+        padding-left: 25px !important; }
   main .hero h1 {
     font-size: 50px; }
   main .history {
@@ -400,6 +488,8 @@ main .contenedor-galeria {
 @media screen and (max-width: 850px) {
   .navbar div div .navbar-nav {
     flex-direction: column; }
+    .navbar div div .navbar-nav .nav-link {
+      padding: 0px !important; }
   body main {
     width: 100%; }
     body main .hero {
@@ -412,7 +502,14 @@ main .contenedor-galeria {
       background-attachment: unset;
       background-position-x: center; }
     body main section .contenedor--carousel {
-      width: 80%; } }
+      width: 80%; }
+  body .fixed a {
+    font-size: 40px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 40px;
+    right: 40px; } }
 
 @media screen and (max-width: 690px) {
   .header-logo {
@@ -441,13 +538,29 @@ main .contenedor-galeria {
   main .maps .contact-map {
     display: none; }
   .bg-contacto .contact-info {
-    font-size: 28px; }
+    font-size: 27px; }
   .bg-contacto .form-container p {
-    font-size: 30px; } }
+    font-size: 30px; }
+  footer ul li a {
+    font-size: 18px;
+    margin: 0px 6px; }
+  footer p {
+    font-size: 18px; }
+  footer div a {
+    font-size: 25px; } }
 
-@media screen and (max-width: 452px) {
+@media screen and (max-width: 480px) {
   body main {
-    padding-top: 0px; }
+    padding-top: 20px; }
+    body main section div .degustaciones-container .caja-degustaciones {
+      flex-direction: column;
+      height: 350px;
+      border-radius: 0px 0px 10px 10px; }
+      body main section div .degustaciones-container .caja-degustaciones img {
+        height: 50%; }
+    body main .tienda h1 {
+      font-size: 23px;
+      font-weight: 900; }
     body main .hero {
       height: auto;
       width: 130% auto;
@@ -462,6 +575,19 @@ main .contenedor-galeria {
       body main .hero p {
         display: none; }
     body main .maps ul li {
-      font-size: 25px; }
+      font-size: 30px; }
     body main .titulo-galeria {
-      margin-top: 40px; } }
+      margin-top: 40px; }
+  body .fixed a {
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    bottom: 20px;
+    right: 20px; }
+  body footer ul li a {
+    font-size: 14px; }
+  body footer p {
+    font-size: 15px; }
+  body footer div a {
+    font-size: 20px; } }

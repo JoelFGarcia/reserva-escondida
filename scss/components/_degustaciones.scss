@@ -1,0 +1,70 @@
+body {
+    main {
+        .contenedor-degustacion {
+            margin-bottom: 15px;
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                border:2px solid $color-principal1;
+                border-radius: 10px;
+                color: $color-principal1;
+                padding: 2px 7px;
+                transition: all 0.5s;
+                &:hover {
+                    background-color: $color-principal1;
+                    color: #ffffff;
+                }
+            }
+        }
+        section {
+            div {
+                .degustaciones-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    .caja-degustaciones {
+                        display: flex;
+                        height: 200px;
+                        margin: 30px 10px;
+                        border:2px solid $color-principal1;
+                        border-radius: 0px 10px 10px 0px;
+                        transition: transform 0.3s, box-shadow 0.3s;
+                        &:hover {
+                            transform: translateX(-4px) translateY(-4px);
+                            box-shadow: 0 5px 15px #000000b3;
+                        }
+                        img {
+                            height: 100%;
+                        }
+                        div {
+                            @include flex-center;
+                            flex-direction: column;
+                            p {
+                                width: 200px;
+                                font-weight: 900;
+                                font-size: 22px;
+                                &:nth-child(2) {
+                                    font-weight: 400;
+                                }
+                            }
+                            a {
+                                text-decoration: none;
+                                font-size: 20px;
+                                border:2px solid $color-principal1;
+                                border-radius: 10px;
+                                color: $color-principal1;
+                                padding: 2px 7px;
+                                transition: all 0.5s;
+                                &:hover {
+                                    background-color: $color-principal1;
+                                    color: #ffffff;
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
